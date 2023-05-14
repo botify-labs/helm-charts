@@ -1,0 +1,6 @@
+# Helm Chart Testing
+# https://github.com/helm/chart-testing
+remote: origin
+target-branch: main
+chart-dirs:
+  - charts
