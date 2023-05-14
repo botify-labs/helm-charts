@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "prometheus-airbyte-exporter.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "prometheus-airbyte-exporter.selectorLabels" . | nindent 6 }}
