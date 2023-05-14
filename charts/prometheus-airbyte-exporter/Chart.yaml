@@ -1,6 +1,6 @@
 apiVersion: v2
 name: prometheus-airbyte-exporter
-description: A Helm chart for Kubernetes
+description: A Helm chart for prometheus-airbyte-exporter
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,4 +21,16 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.16.0"
+appVersion: "latest"
+
+home: https://github.com/virtualtam/airbyte_exporter
+sources:
+  - https://github.com/virtualtam/airbyte_exporter
+keywords:
+  - airbyte
+  - prometheus
+  - exporter
+maintainers:
+  - name: virtualtam
+    email: virtualtam+github@flibidi.net
+    url: https://github.com/virtualtam/
