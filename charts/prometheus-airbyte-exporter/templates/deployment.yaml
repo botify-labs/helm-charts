@@ -36,6 +36,8 @@ spec:
               containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
           env:
+            - name: AIRBYTE_EXPORTER_LOG_LEVEL
+              value: {{ .Values.logLevel }}
             - name: AIRBYTE_EXPORTER_DB_ADDR
               value: {{ .Values.database.addr }}
             - name: AIRBYTE_EXPORTER_DB_SSLMODE

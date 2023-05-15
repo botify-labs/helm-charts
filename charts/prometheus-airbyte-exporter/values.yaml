@@ -111,3 +111,6 @@ database:
   passwordSecret:
     name: prometheus-airbyte-exporter-database-password
     key: password
+
+# Exporter log level
+logLevel: info
