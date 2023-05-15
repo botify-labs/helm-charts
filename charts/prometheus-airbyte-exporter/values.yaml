@@ -91,3 +91,23 @@ extraVolumeMounts: []
 #  - name: ssl-certs
 #    mountPath: /etc/ssl/certs/ca-certificates.crt
 #    subPath: ca-certificates.crt
+
+# Airbyte database connection
+database:
+  # Database host:port
+  addr: ""
+
+  # TLS mode
+  # https://www.postgresql.org/docs/current/libpq-ssl.html#LIBPQ-SSL-SSLMODE-STATEMENTS
+  sslmode: disable
+
+  # Database name
+  name: airbyte
+
+  # Database user
+  user: airbyte_exporter
+
+  # Database password
+  passwordSecret:
+    name: prometheus-airbyte-exporter-database-password
+    key: password

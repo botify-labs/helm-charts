@@ -35,6 +35,20 @@ spec:
             - name: http
               containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
+          env:
+            - name: AIRBYTE_EXPORTER_DB_ADDR
+              value: {{ .Values.database.addr }}
+            - name: AIRBYTE_EXPORTER_DB_SSLMODE
+              value: {{ .Values.database.sslmode }}
+            - name: AIRBYTE_EXPORTER_DB_NAME
+              value: {{ .Values.database.name }}
+            - name: AIRBYTE_EXPORTER_DB_USER
+              value: {{ .Values.database.user }}
+            - name: AIRBYTE_EXPORTER_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.database.passwordSecret.name }}
+                  key: {{ .Values.database.passwordSecret.key }}
           livenessProbe:
             initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
             timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
