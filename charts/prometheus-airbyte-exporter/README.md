@@ -2,7 +2,7 @@
 
 Prometheus exporter for [Airbyte](https://airbyte.com/) metrics.
 
-This chart bootstraps a Prometheus [airbyte_exporter](https://github.com/virtualtam/airbyte_exporter)
+This chart bootstraps a Prometheus [airbyte_exporter](https://github.com/botify-labs/airbyte_exporter)
 Deployment on a [Kubernetes](https://kubernetes.io/) cluster using the [Helm](https://helm.sh/)
 package manager.
 
@@ -14,7 +14,7 @@ package manager.
 ## Add Helm Chart Repository
 
 ```shell
-helm repo add virtualtam https://virtualtam.github.io/helm-charts
+helm repo add botify-labs https://botify-labs.github.io/helm-charts
 helm repo update
 ```
 
@@ -23,7 +23,7 @@ _See [`helm repo`](https://helm.sh/docs/helm/helm_repo/) for command documentati
 ## Install Chart
 
 ```console
-helm install [RELEASE_NAME] virtualtam/prometheus-airbyte-exporter
+helm install [RELEASE_NAME] botify-labs/prometheus-airbyte-exporter
 ```
 
 _See [configuration](#configuring) below._
@@ -47,5 +47,5 @@ To see all configurable options with detailed comments, visit the chart's [value
 or run these configuration commands:
 
 ```console
-helm show values virtualtam/prometheus-airbyte-exporter
+helm show values botify-labs/prometheus-airbyte-exporter
 ```
