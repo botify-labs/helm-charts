@@ -1,5 +1,7 @@
 # Artifact Hub repository metadata file
-repositoryID: 09b3cc5b-1d14-464c-939f-353670c2f4cc
+repositoryID: e0d72464-6001-4fbe-a2d0-ffd2b57e332b
 owners:
   - name: virtualtam
     email: virtualtam+github@flibidi.net
+  - name: botify-labs
+    email: infra+artifacthub@botify.com
