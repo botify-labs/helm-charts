@@ -2,6 +2,27 @@ apiVersion: v1
 entries:
   prometheus-airbyte-exporter:
   - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2023-06-12T13:47:47.571687738Z"
+    description: A Helm chart for prometheus-airbyte-exporter
+    digest: 67801611e4a8dfcfb1cefa06b137788604a0d61648d976d6a84109597ef09286
+    home: https://github.com/botify-labs/airbyte_exporter
+    keywords:
+    - airbyte
+    - prometheus
+    - exporter
+    maintainers:
+    - email: virtualtam+github@flibidi.net
+      name: virtualtam
+      url: https://github.com/virtualtam/
+    name: prometheus-airbyte-exporter
+    sources:
+    - https://github.com/botify-labs/airbyte_exporter
+    type: application
+    urls:
+    - https://github.com/botify-labs/helm-charts/releases/download/prometheus-airbyte-exporter-0.4.1/prometheus-airbyte-exporter-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
     appVersion: 2.0.0
     created: "2023-06-08T09:20:28.552737419Z"
     description: A Helm chart for prometheus-airbyte-exporter
@@ -106,4 +127,4 @@ entries:
     urls:
     - https://github.com/virtualtam/helm-charts/releases/download/prometheus-airbyte-exporter-0.1.1/prometheus-airbyte-exporter-0.1.1.tgz
     version: 0.1.1
-generated: "2023-06-08T09:20:28.552763119Z"
+generated: "2023-06-12T13:47:47.571715538Z"
